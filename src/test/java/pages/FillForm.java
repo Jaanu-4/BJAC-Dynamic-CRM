@@ -319,7 +319,7 @@ public class FillForm {
 	}
 	
 	//Opportunity products
-	@FindBy(xpath = "//li[@aria-label='Opportunity Products']")
+	@FindBy(xpath = "//li[@aria-label='Products']")
 	WebElement opportunityProducts;
 	public WebElement opportunityProductsTab() {
 		return opportunityProducts;
@@ -446,7 +446,7 @@ public class FillForm {
 	}
 	
 	//select from dropdown
-	@FindBy(xpath="//div[@role='listbox']//div[@class='wj-listbox-item'][4]") //2-At Cashiering, 3-Onsite, 4-Mailing
+	@FindBy(xpath="//div[@class='wj-listbox-item' and @role='option'][3]") //2-At Cashiering, 3-Onsite, 4-Mailing
 	WebElement selectReturnType;
 	public WebElement selectReturnType() {
 		return selectReturnType;
@@ -510,7 +510,7 @@ public class FillForm {
 	}
 	
 	
-	@FindBy(xpath="//section[@id='id-119']//span[text()='Refresh']")
+	@FindBy(xpath="//section[@id='id-23394']//span[text()='Refresh']")
 	WebElement invoiceRefresh;
 	public WebElement invoiceRefresh() {
 		return invoiceRefresh;
@@ -524,38 +524,26 @@ public class FillForm {
 		return firstRow;
 	}
 	
+	//saleDay tab
+	@FindBy(xpath="//li[@aria-label='Sale Day']")
+	WebElement saleDayTab;
+	public WebElement saleDayTab() {
+		return saleDayTab;
+	}
 	
+	//SaleDay
+	@FindBy(xpath="//input[@aria-label='Offset Time']")
+	WebElement offSetTime;
+	public WebElement enterOffsetTime() {
+		return offSetTime;
+	}
 	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
+	// Find Email
+	@FindBy(xpath = "//section[@aria-label='Application Information']")
+	WebElement moveToElementEvent;
+	public WebElement moveToElementEvent() {
+		Actions action = new Actions(driver);
+		action.moveToElement(moveToElementEvent).perform();
+		return moveToElementEvent;
+	}
 }

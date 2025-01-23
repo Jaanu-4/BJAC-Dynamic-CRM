@@ -6,13 +6,13 @@
   </listeners>
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="testscripts.CreateBusinessOpportunity">
+      <class name="testscripts.CreatePersonalBidderOpportunity">
         <methods>
           <include name="tearDown"/>
+          <include name="createPersonalBidderTest"/>
           <include name="setUp"/>
-          <include name="createBusinessOpportunityTest"/>
         </methods>
-      </class> <!-- testscripts.CreateBusinessOpportunity -->
+      </class> <!-- testscripts.CreatePersonalBidderOpportunity -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

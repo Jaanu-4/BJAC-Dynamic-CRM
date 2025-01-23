@@ -49,8 +49,8 @@ public class RibbonAction {
 		return saveCloseButton;
 	}
 	
-	//+New Consignment Opportunity Button -- Acc Level
-	@FindBy(xpath="//span[text()='New Bidder Opportunity']")
+	//+New Bodder Opportunity Button -- Acc Level
+	@FindBy(xpath="//span[text()='Bidder Registration']")
 	WebElement newBidderButton;
 	public WebElement newBidder() {
 		return newBidderButton;
